@@ -47,13 +47,71 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(to bottom, rgba(11, 14, 18, 0.88), rgba(11, 14, 18, 0.35), transparent);
 }
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.05rem;
   letter-spacing: -0.02em;
   text-decoration: none;
 }
-.logo span { color: var(--copper); margin-left: 0.2rem; }
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  flex-shrink: 0;
+}
+.logo-text span { color: var(--copper); margin-left: 0.2rem; }
+.hero-logo {
+  display: block;
+  width: min(220px, 42vw);
+  height: auto;
+  margin: 0 0 1rem;
+  mix-blend-mode: screen;
+  animation: rise 0.9s ease both;
+  filter: drop-shadow(0 12px 40px rgba(80, 140, 255, 0.25));
+}
+.game-logo {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: min(88%, 420px);
+  height: auto;
+  margin: 1.5rem auto 0;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 10px 30px rgba(120, 90, 255, 0.28));
+}
+.game-title-logo {
+  display: block;
+  width: min(100%, 340px);
+  height: auto;
+  margin: 0 0 0.85rem;
+  mix-blend-mode: screen;
+}
+.studio-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.studio-logo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  flex-shrink: 0;
+}
+.foot-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+.foot-brand .logo-mark {
+  width: 32px;
+  height: 32px;
+}
 .top nav { display: flex; gap: 1.25rem; }
 .top nav a {
   text-decoration: none;
@@ -205,16 +263,22 @@ img { max-width: 100%; display: block; }
   min-height: 340px;
   border-radius: 0;
   background:
+    radial-gradient(500px 280px at 50% 30%, rgba(110, 90, 255, 0.16), transparent 65%),
     linear-gradient(160deg, rgba(224, 138, 60, 0.08), transparent 45%),
     linear-gradient(20deg, #151b24, #0e1218 70%);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .crusher-stage {
   position: absolute;
-  inset: 12% 10% 10%;
+  inset: auto 10% 8%;
+  height: 42%;
+  opacity: 0.55;
 }
 .belt {
   position: absolute;
