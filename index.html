@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AlphaOstral Games</title>
+  <meta name="description" content="AlphaOstral Games — indie mobile studio. Home of IdleCrush, an idle mineral-crushing game." />
+  <meta property="og:title" content="AlphaOstral Games" />
+  <meta property="og:description" content="Indie mobile games. Crush. Upgrade. Idle." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="logo" href="#top">AlphaOstral<span>Games</span></a>
+    <nav>
+      <a href="#games">Games</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="spark s1"></div>
+        <div class="spark s2"></div>
+        <div class="spark s3"></div>
+      </div>
+      <div class="hero-copy">
+        <p class="brand-mark">AlphaOstral Games</p>
+        <h1>Mobile games built to scratch that one more upgrade itch.</h1>
+        <p class="sub">Indie studio crafting satisfying idle loops, punchy progression, and sessions that fit in your pocket.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#games">See our games</a>
+          <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.AlphaOstralGames.IdleCrush" target="_blank" rel="noopener">IdleCrush on Play</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="games" class="games">
+      <div class="section-head">
+        <p class="eyebrow">Featured</p>
+        <h2>Games</h2>
+      </div>
+
+      <article class="game-band" id="idlecrush">
+        <div class="game-visual" aria-hidden="true">
+          <div class="crusher-stage">
+            <div class="belt"></div>
+            <div class="ore o1"></div>
+            <div class="ore o2"></div>
+            <div class="ore o3"></div>
+            <div class="jaws">
+              <span class="jaw top"></span>
+              <span class="jaw bot"></span>
+            </div>
+            <div class="dust"></div>
+          </div>
+        </div>
+        <div class="game-copy">
+          <p class="tag">Idle · Mobile · Android</p>
+          <h3>IdleCrush</h3>
+          <p>
+            Minerals roll down your conveyor into a hungry crusher. Smash them for coins,
+            upgrade your belt and machine, tap to boost, and keep earning while you’re away.
+          </p>
+          <ul class="features">
+            <li>Satisfying crush loop</li>
+            <li>Conveyor &amp; crusher upgrades</li>
+            <li>Rarer minerals as you dig deeper</li>
+            <li>Offline earnings</li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.AlphaOstralGames.IdleCrush" target="_blank" rel="noopener">Get on Google Play</a>
+            <a class="btn ghost" href="https://delhayejustin-max.github.io/privacy/idlecrush/" target="_blank" rel="noopener">Privacy Policy</a>
+          </div>
+          <p class="meta">Package · com.AlphaOstralGames.IdleCrush</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="studio" class="studio">
+      <div class="section-head">
+        <p class="eyebrow">About</p>
+        <h2>Small studio. Focused games.</h2>
+      </div>
+      <p class="studio-text">
+        AlphaOstral Games is an indie mobile studio. We ship compact experiences with clear
+        feedback, honest progression, and the kind of “one more upgrade” feel that makes idle
+        games addictive for the right reasons.
+      </p>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Say hello</h2>
+      </div>
+      <p class="studio-text">
+        Feedback, press, or partnerships —
+        <a href="mailto:alphaostralgames@gmail.com">alphaostralgames@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div>
+      <strong>AlphaOstral Games</strong>
+      <span>© <span id="y"></span></span>
+    </div>
+    <div class="foot-links">
+      <a href="https://delhayejustin-max.github.io/privacy/" target="_blank" rel="noopener">Privacy</a>
+      <a href="https://github.com/delhayejustin-max" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
