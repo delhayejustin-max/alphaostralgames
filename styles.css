@@ -78,9 +78,8 @@ img { max-width: 100%; display: block; }
   display: block;
   width: 100%;
   height: auto;
-  max-height: 420px;
-  object-fit: cover;
-  object-position: center top;
+  object-fit: contain;
+  object-position: center;
 }
 .studio-head {
   display: flex;
@@ -440,7 +439,6 @@ img { max-width: 100%; display: block; }
 @media (max-width: 860px) {
   .game-band { grid-template-columns: 1fr; }
   .game-visual { order: -1; max-width: 420px; margin: 0 auto; }
-  .game-keyart { max-height: none; }
   .crusher-stage { height: 180px; }
   .hero { align-items: center; padding-top: 8rem; }
   .brand-mark { font-size: clamp(2.2rem, 12vw, 3.6rem); }
